@@ -1,0 +1,10 @@
+{
+  "esversion": 6,
+  "module": true,
+  "strict": true,
+  "browser": true,
+  "globals": {
+    "React": false,
+    "ReactDOM": false
+  }
+}
