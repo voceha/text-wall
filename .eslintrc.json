@@ -1,0 +1,41 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020, // Use the latest ECMAScript version
+    "sourceType": "module" // Allows the use of ES6+ module syntax
+  },
+  "env": {
+    "browser": true, // Code runs in a browser environment
+    "es2020": true // Use ES2020 features
+  },
+  "extends": [
+    "eslint:recommended", // Extend the recommended rules from ESLint
+    "plugin:react/recommended", // Extend the recommended rules from the React plugin
+    "plugin:prettier/recommended" // Extend the recommended rules from the Prettier plugin
+  ],
+  "plugins": ["prettier"], // Include the prettier plugin
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+                "tabWidth": 4,
+                "printWidth": 120,
+                "arrowParens": "avoid",
+                "trailingComma": "es5",
+                "semi": false,
+                "singleQuote": false,
+                "jsxSingleQuote": false,
+                "jsxBracketSameLine": true,
+                "bracketSpacing": true
+            }
+        ],
+        "no-console": "warn",
+        "indent": ["warn", 4, { "SwitchCase": 1 }],
+        "semi": ["warn", "never"],
+    "react/react-in-jsx-scope": "off"
+    },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect the React version
+    }
+  }
+}
