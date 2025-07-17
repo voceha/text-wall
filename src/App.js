@@ -215,7 +215,7 @@ const App = () => {
                 <strong>Connection Status:</strong> {connectionStatus}
                 {connectionStatus === 'Disconnected' && (
                     <div style={{ fontSize: '12px', marginTop: '5px' }}>
-                        Make sure you're connected to the same network as the server
+                        Make sure you&apos;re connected to the same network as the server
                     </div>
                 )}
                 {connectionStatus === 'Error' && (
@@ -279,7 +279,7 @@ const App = () => {
                     <div><strong>Is Mobile:</strong> {isMobile ? 'Yes' : 'No'}</div>
                     <div><strong>User Agent:</strong> {navigator.userAgent.substring(0, 50)}...</div>
                     <div style={{ marginTop: '5px', fontSize: '11px', color: '#6c757d' }}>
-                        Tip: If on mobile, make sure you're using your computer's IP address instead of localhost
+                        Tip: If on mobile, make sure you&apos;re using your computer&apos;s IP address instead of localhost
                     </div>
                 </div>
             )}
